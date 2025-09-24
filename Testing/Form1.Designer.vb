@@ -57,6 +57,11 @@ Partial Class Form1
         TableLayoutPanel15 = New TableLayoutPanel()
         Address2TextBox = New TextBox()
         CheckBox1 = New CheckBox()
+        TableLayoutPanel17 = New TableLayoutPanel()
+        TextBox8 = New TextBox()
+        TextBox7 = New TextBox()
+        lblZipCodeText = New Label()
+        lblCityText = New Label()
         TableLayoutPanel12 = New TableLayoutPanel()
         TextBox16 = New TextBox()
         TextBox15 = New TextBox()
@@ -69,6 +74,7 @@ Partial Class Form1
         TextBox13 = New TextBox()
         lblAgeText = New Label()
         lblBirthdayText = New Label()
+        DateTimePicker1 = New DateTimePicker()
         lblEmailText = New Label()
         ComboBox1 = New ComboBox()
         TableLayoutPanel14 = New TableLayoutPanel()
@@ -77,9 +83,6 @@ Partial Class Form1
         ComboBox2 = New ComboBox()
         ComboBox3 = New ComboBox()
         lblMobileText = New Label()
-        TableLayoutPanel17 = New TableLayoutPanel()
-        lblCityText = New Label()
-        lblZipCodeText = New Label()
         TableLayoutPanel1.SuspendLayout()
         TableLayoutPanel2.SuspendLayout()
         TableLayoutPanel3.SuspendLayout()
@@ -93,10 +96,10 @@ Partial Class Form1
         TableLayoutPanel10.SuspendLayout()
         TableLayoutPanel11.SuspendLayout()
         TableLayoutPanel15.SuspendLayout()
+        TableLayoutPanel17.SuspendLayout()
         TableLayoutPanel12.SuspendLayout()
         TableLayoutPanel13.SuspendLayout()
         TableLayoutPanel14.SuspendLayout()
-        TableLayoutPanel17.SuspendLayout()
         SuspendLayout()
         ' 
         ' TableLayoutPanel1
@@ -346,17 +349,17 @@ Partial Class Form1
         TableLayoutPanel10.Location = New Point(450, 3)
         TableLayoutPanel10.Name = "TableLayoutPanel10"
         TableLayoutPanel10.RowCount = 11
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 22.96748F))
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 4.47154474F))
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 6.300813F))
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 4.47154474F))
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 6.910569F))
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 4.878049F))
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 6.910569F))
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 4.878049F))
         TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 12.1951218F))
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 11.7886181F))
-        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 14.2276421F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 3.65853667F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 6.097561F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 3.65853667F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 6.504065F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 4.06504059F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 6.300813F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 4.67479658F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 13.8211384F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 16.4634151F))
+        TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 22.3577232F))
         TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
         TableLayoutPanel10.Size = New Size(442, 492)
         TableLayoutPanel10.TabIndex = 0
@@ -365,7 +368,7 @@ Partial Class Form1
         ' 
         lblAddress2Text.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblAddress2Text.AutoSize = True
-        lblAddress2Text.Location = New Point(3, 289)
+        lblAddress2Text.Location = New Point(3, 217)
         lblAddress2Text.Name = "lblAddress2Text"
         lblAddress2Text.Size = New Size(58, 15)
         lblAddress2Text.TabIndex = 23
@@ -374,26 +377,26 @@ Partial Class Form1
         ' 
         ' TextBox6
         ' 
-        TextBox6.Dock = DockStyle.Left
-        TextBox6.Location = New Point(3, 191)
+        TextBox6.Dock = DockStyle.Right
+        TextBox6.Location = New Point(6, 129)
         TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(436, 23)
+        TextBox6.Size = New Size(433, 23)
         TextBox6.TabIndex = 22
         ' 
         ' AddressTextBox
         ' 
-        AddressTextBox.Dock = DockStyle.Left
-        AddressTextBox.Location = New Point(3, 249)
+        AddressTextBox.Dock = DockStyle.Right
+        AddressTextBox.Location = New Point(6, 181)
         AddressTextBox.Name = "AddressTextBox"
-        AddressTextBox.Size = New Size(436, 23)
+        AddressTextBox.Size = New Size(433, 23)
         AddressTextBox.TabIndex = 19
         ' 
         ' TextBox5
         ' 
-        TextBox5.Dock = DockStyle.Left
-        TextBox5.Location = New Point(3, 138)
+        TextBox5.Dock = DockStyle.Right
+        TextBox5.Location = New Point(6, 81)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(436, 23)
+        TextBox5.Size = New Size(433, 23)
         TextBox5.TabIndex = 17
         ' 
         ' TableLayoutPanel11
@@ -410,14 +413,14 @@ Partial Class Form1
         TableLayoutPanel11.Name = "TableLayoutPanel11"
         TableLayoutPanel11.RowCount = 2
         TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Absolute, 86F))
-        TableLayoutPanel11.Size = New Size(436, 107)
+        TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Absolute, 34F))
+        TableLayoutPanel11.Size = New Size(436, 54)
         TableLayoutPanel11.TabIndex = 11
         ' 
         ' TextBox11
         ' 
         TextBox11.Dock = DockStyle.Left
-        TextBox11.Location = New Point(220, 24)
+        TextBox11.Location = New Point(220, 23)
         TextBox11.Name = "TextBox11"
         TextBox11.Size = New Size(212, 23)
         TextBox11.TabIndex = 8
@@ -425,7 +428,7 @@ Partial Class Form1
         ' TextBox10
         ' 
         TextBox10.Dock = DockStyle.Left
-        TextBox10.Location = New Point(3, 24)
+        TextBox10.Location = New Point(3, 23)
         TextBox10.Name = "TextBox10"
         TextBox10.Size = New Size(211, 23)
         TextBox10.TabIndex = 7
@@ -434,7 +437,7 @@ Partial Class Form1
         ' 
         lblWeightText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblWeightText.AutoSize = True
-        lblWeightText.Location = New Point(220, 6)
+        lblWeightText.Location = New Point(220, 5)
         lblWeightText.Name = "lblWeightText"
         lblWeightText.Size = New Size(61, 15)
         lblWeightText.TabIndex = 3
@@ -445,7 +448,7 @@ Partial Class Form1
         ' 
         lblHeightText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblHeightText.AutoSize = True
-        lblHeightText.Location = New Point(3, 6)
+        lblHeightText.Location = New Point(3, 5)
         lblHeightText.Name = "lblHeightText"
         lblHeightText.Size = New Size(63, 15)
         lblHeightText.TabIndex = 2
@@ -456,7 +459,7 @@ Partial Class Form1
         ' 
         Label3.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         Label3.AutoSize = True
-        Label3.Location = New Point(3, 120)
+        Label3.Location = New Point(3, 63)
         Label3.Name = "Label3"
         Label3.Size = New Size(68, 15)
         Label3.TabIndex = 1
@@ -467,7 +470,7 @@ Partial Class Form1
         ' 
         lblSpouseText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblSpouseText.AutoSize = True
-        lblSpouseText.Location = New Point(3, 173)
+        lblSpouseText.Location = New Point(3, 111)
         lblSpouseText.Name = "lblSpouseText"
         lblSpouseText.Size = New Size(45, 15)
         lblSpouseText.TabIndex = 3
@@ -478,7 +481,7 @@ Partial Class Form1
         ' 
         lblAddressText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblAddressText.AutoSize = True
-        lblAddressText.Location = New Point(3, 231)
+        lblAddressText.Location = New Point(3, 163)
         lblAddressText.Name = "lblAddressText"
         lblAddressText.Size = New Size(63, 15)
         lblAddressText.TabIndex = 4
@@ -492,17 +495,17 @@ Partial Class Form1
         TableLayoutPanel15.Controls.Add(Address2TextBox, 0, 0)
         TableLayoutPanel15.Controls.Add(CheckBox1, 0, 1)
         TableLayoutPanel15.Dock = DockStyle.Fill
-        TableLayoutPanel15.Location = New Point(3, 307)
+        TableLayoutPanel15.Location = New Point(3, 235)
         TableLayoutPanel15.Name = "TableLayoutPanel15"
         TableLayoutPanel15.RowCount = 2
-        TableLayoutPanel15.RowStyles.Add(New RowStyle(SizeType.Percent, 53.3333321F))
-        TableLayoutPanel15.RowStyles.Add(New RowStyle(SizeType.Percent, 46.6666679F))
-        TableLayoutPanel15.Size = New Size(436, 54)
+        TableLayoutPanel15.RowStyles.Add(New RowStyle(SizeType.Percent, 53.0612259F))
+        TableLayoutPanel15.RowStyles.Add(New RowStyle(SizeType.Percent, 46.9387741F))
+        TableLayoutPanel15.Size = New Size(436, 62)
         TableLayoutPanel15.TabIndex = 24
         ' 
         ' Address2TextBox
         ' 
-        Address2TextBox.Dock = DockStyle.Left
+        Address2TextBox.Dock = DockStyle.Right
         Address2TextBox.Location = New Point(3, 3)
         Address2TextBox.Name = "Address2TextBox"
         Address2TextBox.Size = New Size(430, 23)
@@ -512,13 +515,69 @@ Partial Class Form1
         ' 
         CheckBox1.AutoSize = True
         CheckBox1.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        CheckBox1.Location = New Point(3, 31)
+        CheckBox1.Location = New Point(3, 35)
         CheckBox1.Name = "CheckBox1"
         CheckBox1.Size = New Size(120, 17)
         CheckBox1.TabIndex = 0
         CheckBox1.Text = "Same as Address 1"
         CheckBox1.TextAlign = ContentAlignment.TopCenter
         CheckBox1.UseVisualStyleBackColor = True
+        ' 
+        ' TableLayoutPanel17
+        ' 
+        TableLayoutPanel17.ColumnCount = 2
+        TableLayoutPanel17.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel17.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel17.Controls.Add(TextBox8, 1, 1)
+        TableLayoutPanel17.Controls.Add(TextBox7, 0, 1)
+        TableLayoutPanel17.Controls.Add(lblZipCodeText, 1, 0)
+        TableLayoutPanel17.Controls.Add(lblCityText, 0, 0)
+        TableLayoutPanel17.Dock = DockStyle.Fill
+        TableLayoutPanel17.Location = New Point(3, 303)
+        TableLayoutPanel17.Name = "TableLayoutPanel17"
+        TableLayoutPanel17.RowCount = 2
+        TableLayoutPanel17.RowStyles.Add(New RowStyle(SizeType.Percent, 24F))
+        TableLayoutPanel17.RowStyles.Add(New RowStyle(SizeType.Percent, 76F))
+        TableLayoutPanel17.Size = New Size(436, 75)
+        TableLayoutPanel17.TabIndex = 25
+        ' 
+        ' TextBox8
+        ' 
+        TextBox8.Dock = DockStyle.Left
+        TextBox8.Location = New Point(221, 21)
+        TextBox8.Name = "TextBox8"
+        TextBox8.Size = New Size(101, 23)
+        TextBox8.TabIndex = 27
+        ' 
+        ' TextBox7
+        ' 
+        TextBox7.Dock = DockStyle.Right
+        TextBox7.Location = New Point(3, 21)
+        TextBox7.Name = "TextBox7"
+        TextBox7.Size = New Size(212, 23)
+        TextBox7.TabIndex = 26
+        ' 
+        ' lblZipCodeText
+        ' 
+        lblZipCodeText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        lblZipCodeText.AutoSize = True
+        lblZipCodeText.Location = New Point(221, 3)
+        lblZipCodeText.Name = "lblZipCodeText"
+        lblZipCodeText.Size = New Size(55, 15)
+        lblZipCodeText.TabIndex = 25
+        lblZipCodeText.Text = "Zipcode*"
+        lblZipCodeText.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' lblCityText
+        ' 
+        lblCityText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        lblCityText.AutoSize = True
+        lblCityText.Location = New Point(3, 3)
+        lblCityText.Name = "lblCityText"
+        lblCityText.Size = New Size(84, 15)
+        lblCityText.TabIndex = 24
+        lblCityText.Text = "City/Province*"
+        lblCityText.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' TableLayoutPanel12
         ' 
@@ -541,51 +600,51 @@ Partial Class Form1
         TableLayoutPanel12.Location = New Point(3, 3)
         TableLayoutPanel12.Name = "TableLayoutPanel12"
         TableLayoutPanel12.RowCount = 13
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 23.1707325F))
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 4.06504059F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 12.3983736F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 3.25203252F))
         TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 6.300813F))
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 4.878049F))
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 6.504065F))
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 17.6829262F))
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 4.47154474F))
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 6.097561F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 3.65853667F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 6.707317F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 11.99187F))
         TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 4.268293F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 6.504065F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 4.06504059F))
         TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 6.097561F))
         TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 4.06504059F))
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 6.504065F))
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 5.487805F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 8.130081F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 22.560976F))
         TableLayoutPanel12.Size = New Size(441, 492)
         TableLayoutPanel12.TabIndex = 1
         ' 
         ' TextBox16
         ' 
         TextBox16.Dock = DockStyle.Left
-        TextBox16.Location = New Point(3, 434)
+        TextBox16.Location = New Point(3, 344)
         TextBox16.Name = "TextBox16"
-        TextBox16.Size = New Size(228, 23)
+        TextBox16.Size = New Size(214, 23)
         TextBox16.TabIndex = 19
         ' 
         ' TextBox15
         ' 
         TextBox15.Dock = DockStyle.Left
-        TextBox15.Location = New Point(3, 384)
+        TextBox15.Location = New Point(3, 294)
         TextBox15.Name = "TextBox15"
-        TextBox15.Size = New Size(228, 23)
+        TextBox15.Size = New Size(214, 23)
         TextBox15.TabIndex = 17
         ' 
         ' TextBox14
         ' 
         TextBox14.Dock = DockStyle.Left
-        TextBox14.Location = New Point(3, 333)
+        TextBox14.Location = New Point(3, 242)
         TextBox14.Name = "TextBox14"
-        TextBox14.Size = New Size(228, 23)
+        TextBox14.Size = New Size(214, 23)
         TextBox14.TabIndex = 15
         ' 
         ' lblCitizenship
         ' 
         lblCitizenship.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblCitizenship.AutoSize = True
-        lblCitizenship.Location = New Point(3, 315)
+        lblCitizenship.Location = New Point(3, 224)
         lblCitizenship.Name = "lblCitizenship"
         lblCitizenship.Size = New Size(70, 15)
         lblCitizenship.TabIndex = 14
@@ -596,7 +655,7 @@ Partial Class Form1
         ' 
         lblGenderText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblGenderText.AutoSize = True
-        lblGenderText.Location = New Point(3, 174)
+        lblGenderText.Location = New Point(3, 111)
         lblGenderText.Name = "lblGenderText"
         lblGenderText.Size = New Size(50, 15)
         lblGenderText.TabIndex = 11
@@ -606,16 +665,16 @@ Partial Class Form1
         ' TextBox12
         ' 
         TextBox12.Dock = DockStyle.Left
-        TextBox12.Location = New Point(3, 137)
+        TextBox12.Location = New Point(3, 80)
         TextBox12.Name = "TextBox12"
-        TextBox12.Size = New Size(228, 23)
+        TextBox12.Size = New Size(214, 23)
         TextBox12.TabIndex = 10
         ' 
         ' lblPlaceOfBirthText
         ' 
         lblPlaceOfBirthText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblPlaceOfBirthText.AutoSize = True
-        lblPlaceOfBirthText.Location = New Point(3, 119)
+        lblPlaceOfBirthText.Location = New Point(3, 62)
         lblPlaceOfBirthText.Name = "lblPlaceOfBirthText"
         lblPlaceOfBirthText.Size = New Size(82, 15)
         lblPlaceOfBirthText.TabIndex = 2
@@ -630,19 +689,20 @@ Partial Class Form1
         TableLayoutPanel13.Controls.Add(TextBox13, 1, 1)
         TableLayoutPanel13.Controls.Add(lblAgeText, 1, 0)
         TableLayoutPanel13.Controls.Add(lblBirthdayText, 0, 0)
+        TableLayoutPanel13.Controls.Add(DateTimePicker1, 0, 1)
         TableLayoutPanel13.Dock = DockStyle.Fill
         TableLayoutPanel13.Location = New Point(3, 3)
         TableLayoutPanel13.Name = "TableLayoutPanel13"
         TableLayoutPanel13.RowCount = 2
-        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 18.5185184F))
-        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 81.48148F))
-        TableLayoutPanel13.Size = New Size(435, 108)
+        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 35.1063843F))
+        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 64.8936157F))
+        TableLayoutPanel13.Size = New Size(435, 55)
         TableLayoutPanel13.TabIndex = 0
         ' 
         ' TextBox13
         ' 
         TextBox13.Dock = DockStyle.Fill
-        TextBox13.Location = New Point(220, 23)
+        TextBox13.Location = New Point(220, 22)
         TextBox13.Name = "TextBox13"
         TextBox13.Size = New Size(212, 23)
         TextBox13.TabIndex = 9
@@ -651,7 +711,7 @@ Partial Class Form1
         ' 
         lblAgeText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblAgeText.AutoSize = True
-        lblAgeText.Location = New Point(220, 5)
+        lblAgeText.Location = New Point(220, 4)
         lblAgeText.Name = "lblAgeText"
         lblAgeText.Size = New Size(33, 15)
         lblAgeText.TabIndex = 4
@@ -662,18 +722,26 @@ Partial Class Form1
         ' 
         lblBirthdayText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblBirthdayText.AutoSize = True
-        lblBirthdayText.Location = New Point(3, 5)
+        lblBirthdayText.Location = New Point(3, 4)
         lblBirthdayText.Name = "lblBirthdayText"
         lblBirthdayText.Size = New Size(56, 15)
         lblBirthdayText.TabIndex = 3
         lblBirthdayText.Text = "Birthday*"
         lblBirthdayText.TextAlign = ContentAlignment.MiddleCenter
         ' 
+        ' DateTimePicker1
+        ' 
+        DateTimePicker1.Dock = DockStyle.Left
+        DateTimePicker1.Location = New Point(3, 22)
+        DateTimePicker1.Name = "DateTimePicker1"
+        DateTimePicker1.Size = New Size(211, 23)
+        DateTimePicker1.TabIndex = 10
+        ' 
         ' lblEmailText
         ' 
         lblEmailText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblEmailText.AutoSize = True
-        lblEmailText.Location = New Point(3, 416)
+        lblEmailText.Location = New Point(3, 326)
         lblEmailText.Name = "lblEmailText"
         lblEmailText.Size = New Size(41, 15)
         lblEmailText.TabIndex = 2
@@ -682,16 +750,16 @@ Partial Class Form1
         ' 
         ' ComboBox1
         ' 
+        ComboBox1.Dock = DockStyle.Left
         ComboBox1.FormattingEnabled = True
         ComboBox1.Items.AddRange(New Object() {"Male", "Female", "Other", "Prefer not to say"})
-        ComboBox1.Location = New Point(3, 192)
+        ComboBox1.Location = New Point(3, 129)
         ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(121, 23)
+        ComboBox1.Size = New Size(97, 23)
         ComboBox1.TabIndex = 12
         ' 
         ' TableLayoutPanel14
         ' 
-        TableLayoutPanel14.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         TableLayoutPanel14.ColumnCount = 2
         TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
@@ -699,19 +767,20 @@ Partial Class Form1
         TableLayoutPanel14.Controls.Add(lblVoterStatusText, 0, 0)
         TableLayoutPanel14.Controls.Add(ComboBox2, 0, 1)
         TableLayoutPanel14.Controls.Add(ComboBox3, 1, 1)
-        TableLayoutPanel14.Location = New Point(3, 224)
+        TableLayoutPanel14.Dock = DockStyle.Fill
+        TableLayoutPanel14.Location = New Point(3, 162)
         TableLayoutPanel14.Name = "TableLayoutPanel14"
         TableLayoutPanel14.RowCount = 2
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel14.Size = New Size(435, 81)
+        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 37.7358475F))
+        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 62.2641525F))
+        TableLayoutPanel14.Size = New Size(435, 53)
         TableLayoutPanel14.TabIndex = 13
         ' 
         ' lblCivilStatusText
         ' 
         lblCivilStatusText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblCivilStatusText.AutoSize = True
-        lblCivilStatusText.Location = New Point(220, 25)
+        lblCivilStatusText.Location = New Point(220, 4)
         lblCivilStatusText.Name = "lblCivilStatusText"
         lblCivilStatusText.Size = New Size(70, 15)
         lblCivilStatusText.TabIndex = 13
@@ -722,7 +791,7 @@ Partial Class Form1
         ' 
         lblVoterStatusText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblVoterStatusText.AutoSize = True
-        lblVoterStatusText.Location = New Point(3, 25)
+        lblVoterStatusText.Location = New Point(3, 4)
         lblVoterStatusText.Name = "lblVoterStatusText"
         lblVoterStatusText.Size = New Size(74, 15)
         lblVoterStatusText.TabIndex = 12
@@ -733,7 +802,7 @@ Partial Class Form1
         ' 
         ComboBox2.FormattingEnabled = True
         ComboBox2.Items.AddRange(New Object() {"Registered Voter", "Not Registered", "Pending/In Process", "Deactivate/Inactive"})
-        ComboBox2.Location = New Point(3, 43)
+        ComboBox2.Location = New Point(3, 22)
         ComboBox2.Name = "ComboBox2"
         ComboBox2.Size = New Size(136, 23)
         ComboBox2.TabIndex = 14
@@ -743,7 +812,7 @@ Partial Class Form1
         ' 
         ComboBox3.FormattingEnabled = True
         ComboBox3.Items.AddRange(New Object() {"Single", "Married", "Widowed", "Separated", "Divorced/Annulled"})
-        ComboBox3.Location = New Point(220, 43)
+        ComboBox3.Location = New Point(220, 22)
         ComboBox3.Name = "ComboBox3"
         ComboBox3.Size = New Size(141, 23)
         ComboBox3.TabIndex = 15
@@ -753,50 +822,12 @@ Partial Class Form1
         ' 
         lblMobileText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblMobileText.AutoSize = True
-        lblMobileText.Location = New Point(3, 366)
+        lblMobileText.Location = New Point(3, 276)
         lblMobileText.Name = "lblMobileText"
         lblMobileText.Size = New Size(71, 15)
         lblMobileText.TabIndex = 16
         lblMobileText.Text = "Mobile No.*"
         lblMobileText.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' TableLayoutPanel17
-        ' 
-        TableLayoutPanel17.ColumnCount = 2
-        TableLayoutPanel17.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
-        TableLayoutPanel17.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
-        TableLayoutPanel17.Controls.Add(lblZipCodeText, 1, 0)
-        TableLayoutPanel17.Controls.Add(lblCityText, 0, 0)
-        TableLayoutPanel17.Dock = DockStyle.Fill
-        TableLayoutPanel17.Location = New Point(3, 367)
-        TableLayoutPanel17.Name = "TableLayoutPanel17"
-        TableLayoutPanel17.RowCount = 2
-        TableLayoutPanel17.RowStyles.Add(New RowStyle(SizeType.Percent, 38.46154F))
-        TableLayoutPanel17.RowStyles.Add(New RowStyle(SizeType.Percent, 61.53846F))
-        TableLayoutPanel17.Size = New Size(436, 52)
-        TableLayoutPanel17.TabIndex = 25
-        ' 
-        ' lblCityText
-        ' 
-        lblCityText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
-        lblCityText.AutoSize = True
-        lblCityText.Location = New Point(3, 5)
-        lblCityText.Name = "lblCityText"
-        lblCityText.Size = New Size(84, 15)
-        lblCityText.TabIndex = 24
-        lblCityText.Text = "City/Province*"
-        lblCityText.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' lblZipCodeText
-        ' 
-        lblZipCodeText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
-        lblZipCodeText.AutoSize = True
-        lblZipCodeText.Location = New Point(221, 5)
-        lblZipCodeText.Name = "lblZipCodeText"
-        lblZipCodeText.Size = New Size(55, 15)
-        lblZipCodeText.TabIndex = 25
-        lblZipCodeText.Text = "Zipcode*"
-        lblZipCodeText.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' Form1
         ' 
@@ -826,14 +857,14 @@ Partial Class Form1
         TableLayoutPanel11.PerformLayout()
         TableLayoutPanel15.ResumeLayout(False)
         TableLayoutPanel15.PerformLayout()
+        TableLayoutPanel17.ResumeLayout(False)
+        TableLayoutPanel17.PerformLayout()
         TableLayoutPanel12.ResumeLayout(False)
         TableLayoutPanel12.PerformLayout()
         TableLayoutPanel13.ResumeLayout(False)
         TableLayoutPanel13.PerformLayout()
         TableLayoutPanel14.ResumeLayout(False)
         TableLayoutPanel14.PerformLayout()
-        TableLayoutPanel17.ResumeLayout(False)
-        TableLayoutPanel17.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -894,11 +925,13 @@ Partial Class Form1
     Friend WithEvents TableLayoutPanel15 As TableLayoutPanel
     Friend WithEvents Address2TextBox As TextBox
     Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TableLayoutPanel16 As TableLayoutPanel
     Friend WithEvents Label4 As Label
     Friend WithEvents TableLayoutPanel17 As TableLayoutPanel
     Friend WithEvents lblZipCodeText As Label
     Friend WithEvents lblCityText As Label
+    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 
 End Class
