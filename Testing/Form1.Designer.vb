@@ -377,24 +377,24 @@ Partial Class Form1
         ' 
         ' TextBox6
         ' 
-        TextBox6.Dock = DockStyle.Right
-        TextBox6.Location = New Point(6, 129)
+        TextBox6.Dock = DockStyle.Left
+        TextBox6.Location = New Point(3, 129)
         TextBox6.Name = "TextBox6"
         TextBox6.Size = New Size(433, 23)
         TextBox6.TabIndex = 22
         ' 
         ' AddressTextBox
         ' 
-        AddressTextBox.Dock = DockStyle.Right
-        AddressTextBox.Location = New Point(6, 181)
+        AddressTextBox.Dock = DockStyle.Left
+        AddressTextBox.Location = New Point(3, 181)
         AddressTextBox.Name = "AddressTextBox"
         AddressTextBox.Size = New Size(433, 23)
         AddressTextBox.TabIndex = 19
         ' 
         ' TextBox5
         ' 
-        TextBox5.Dock = DockStyle.Right
-        TextBox5.Location = New Point(6, 81)
+        TextBox5.Dock = DockStyle.Left
+        TextBox5.Location = New Point(3, 81)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(433, 23)
         TextBox5.TabIndex = 17
@@ -505,7 +505,7 @@ Partial Class Form1
         ' 
         ' Address2TextBox
         ' 
-        Address2TextBox.Dock = DockStyle.Right
+        Address2TextBox.Dock = DockStyle.Left
         Address2TextBox.Location = New Point(3, 3)
         Address2TextBox.Name = "Address2TextBox"
         Address2TextBox.Size = New Size(430, 23)
@@ -551,7 +551,7 @@ Partial Class Form1
         ' 
         ' TextBox7
         ' 
-        TextBox7.Dock = DockStyle.Right
+        TextBox7.Dock = DockStyle.Left
         TextBox7.Location = New Point(3, 21)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(212, 23)
@@ -761,8 +761,8 @@ Partial Class Form1
         ' TableLayoutPanel14
         ' 
         TableLayoutPanel14.ColumnCount = 2
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 34.0229874F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 65.97701F))
         TableLayoutPanel14.Controls.Add(lblCivilStatusText, 1, 0)
         TableLayoutPanel14.Controls.Add(lblVoterStatusText, 0, 0)
         TableLayoutPanel14.Controls.Add(ComboBox2, 0, 1)
@@ -780,7 +780,7 @@ Partial Class Form1
         ' 
         lblCivilStatusText.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         lblCivilStatusText.AutoSize = True
-        lblCivilStatusText.Location = New Point(220, 4)
+        lblCivilStatusText.Location = New Point(150, 4)
         lblCivilStatusText.Name = "lblCivilStatusText"
         lblCivilStatusText.Size = New Size(70, 15)
         lblCivilStatusText.TabIndex = 13
@@ -812,7 +812,7 @@ Partial Class Form1
         ' 
         ComboBox3.FormattingEnabled = True
         ComboBox3.Items.AddRange(New Object() {"Single", "Married", "Widowed", "Separated", "Divorced/Annulled"})
-        ComboBox3.Location = New Point(220, 22)
+        ComboBox3.Location = New Point(150, 22)
         ComboBox3.Name = "ComboBox3"
         ComboBox3.Size = New Size(141, 23)
         ComboBox3.TabIndex = 15
